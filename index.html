@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jsinheritance</title>
+
+        <script>
+
+        </script>
+    </head>
+    <body>
+        
+
+        <script>
+            class A{
+                add(x,y){  //formal argument
+
+                    //every function should be return
+
+                    return x+y ; //statement
+
+                }
+
+            }
+            //let object = new classname();
+            //object.method();
+
+            let myobjecta = new A();
+            let resulta = myobjecta.add(5,4); //actual argment
+            console.log(resulta);
+            //class child extends parents
+
+            class B extends A{
+                sub(x,y){
+
+                    return x-y ; //statement
+
+                }
+
+            }
+
+            let myobjectb = new B();
+            let resultb = myobjectb.sub(12,4); //actual argment
+            console.log(resultb);
+
+            class C extends B{
+                mul(x,y){
+
+                    return x*y ; //statement
+
+                }
+
+
+            }
+
+            let myobjectc = new C();
+            let resultc = myobjectc.mul(5,4); //actual argment
+            console.log(resultc);
+            class D extends C{
+                //member 1
+
+                //member 2
+
+                //member 3
+
+                div(x,y){
+
+                    return x/y ; //statement
+
+                }
+            }
+            let myobjectd = new D();
+            let resultd = myobjectd.div(20,4); //actual argment
+            console.log(resultd);
+
+            console.log(myobjectd.add(10,2));
+            console.log(myobjectd.sub(12,5));
+           console.log( myobjectd.mul(11,3));
+           console.log (myobjectd.div(12,2));
+
+        </script>
+    </body>
+</html>
